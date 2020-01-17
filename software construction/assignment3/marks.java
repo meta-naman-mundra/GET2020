@@ -9,9 +9,9 @@ import java.util.*;
  */
 
 class Marksheet {
-	private int count, passed;
+	private int count;
 	private int grades[];
-	private float maximum, total, minimum;
+	private static final int passingMark = 40;
 
 	/**
 	 * Takes input grades of n students
@@ -21,26 +21,12 @@ class Marksheet {
 	 */
 	public Marksheet(int count, Scanner input) {
 		this.count = count;
-		maximum = 0;
-		minimum = 100;
-		total = 0;
-		passed = 0;
 		grades = new int[count];
 		System.out.println("Enter grade of student no.:");
 		for (int i = 0; i < count; i++) {
 			System.out.print((i + 1) + ". ");
 			grades[i] = input.nextInt();
 			input.nextLine();
-			if (maximum < grades[i]) {
-				maximum = grades[i];
-			}
-			if (minimum > grades[i]) {
-				minimum = grades[i];
-			}
-			if (grades[i] >= 40) {
-				passed++;
-			}
-			total += grades[i];
 		}
 	}
 
@@ -52,6 +38,10 @@ class Marksheet {
 		if (count == 0) {
 			throw (new Exception("divide by zero"));
 		}
+		int total=0;
+		for(int g: grades){
+			total+=g;
+		}
 		return total / count;
 	}
 
@@ -59,6 +49,13 @@ class Marksheet {
 	 * @return max_grade
 	 */
 	public float getMaximum() {
+		int maximum=0;
+		for(int g: grades){
+			if(g>maximum){
+			//	System.out.println(g);
+				maximum=g;
+			}
+		}
 		return maximum;
 	}
 
@@ -66,6 +63,12 @@ class Marksheet {
 	 * @return minimun grade
 	 */
 	public float getMinimum() {
+		int minimum=100;
+		for(int g: grades){
+			if(g<minimum){
+				minimum=g;
+			}
+		}
 		return minimum;
 	}
 
@@ -73,6 +76,12 @@ class Marksheet {
 	 * @return percentage of the students
 	 */
 	public float getPassedPercentage() {
+		int passed = 0;
+		for(int g: grades){
+			if(g>=passingMark){
+				passed++;
+			}
+		}
 		return ((float) passed * 100) / count;
 	}
 };
