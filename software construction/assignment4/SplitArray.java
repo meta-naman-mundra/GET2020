@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * function to split array in to equal sum
+ * 
+ * @param integer
+ *            array return the position
+ */
 class Split {
 	public static int splitArray(int arr[]) throws Exception {
 		if (arr.length == 0) {

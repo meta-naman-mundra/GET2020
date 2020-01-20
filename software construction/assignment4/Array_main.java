@@ -1,6 +1,13 @@
 import java.util.*;
 
-class Array{
+/**
+ * Function to find maximum pair of number which are repeating in a reverse
+ * order
+ * 
+ * @param integer
+ *            array return maximum length
+ */
+class Array {
 	public static int maxMirror(int[] arr) throws Exception {
 		if (arr.length == 0) {
 			throw new Exception("Empty Array");
@@ -23,16 +30,18 @@ class Array{
 	}
 }
 
-class Array_main{
+class Array_main {
 	public static void main(String args[]) {
-			try{
-				System.out.println(Array.maxMirror(new int[]{1, 2, 3, 8, 9, 3, 2, 1}));
-				System.out.println(Array.maxMirror(new int[]{7, 1, 4, 9, 7, 4, 1}));
-			}
+		try {
+			System.out.println(Array.maxMirror(new int[] { 1, 2, 3, 8, 9, 3, 2,
+					1 }));
+			System.out.println(Array
+					.maxMirror(new int[] { 7, 1, 4, 9, 7, 4, 1 }));
+		}
 
-			catch(Exception e){
-				e.printStackTrace();
-			}
-		
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 }

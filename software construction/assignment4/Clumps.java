@@ -1,5 +1,12 @@
 import java.util.*;
 
+/**
+ * Function to find number which are in series of 2 or more adjacent elements of
+ * the same value
+ * 
+ * @param integer
+ *            array return count of number
+ */
 class ArrayClumps {
 	public static int countClumps(int[] arr) throws Exception {
 		if (arr.length == 0) {

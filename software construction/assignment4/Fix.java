@@ -1,5 +1,16 @@
 import java.util.*;
 
+/**
+ * function to exchange the element in an array
+ * 
+ * @param integer
+ *            array
+ * @param interger
+ *            x
+ * @param integer
+ *            y return array
+ */
+
 class Fix_array {
 	public static int[] fixXY(int arr[], int X, int Y) throws Exception {
 		if (arr.length == 0) {
@@ -52,11 +63,13 @@ class Fix_array {
 	}
 
 	class Fix {
-		public void main(String args[]) throws Exception{
+		public void main(String args[]) throws Exception {
 			try {
-				printArray(Fix_array.fixXY(new int[] { 5, 4, 9, 4, 9, 5 }, 4, 5));
+				printArray(Fix_array
+						.fixXY(new int[] { 5, 4, 9, 4, 9, 5 }, 4, 5));
 				printArray(Fix_array.fixXY(new int[] { 1, 4, 1, 5 }, 4, 5));
-				printArray(Fix_array.fixXY(new int[] { 1, 4, 1, 5, 5, 4, 1 },4, 5));
+				printArray(Fix_array.fixXY(new int[] { 1, 4, 1, 5, 5, 4, 1 },
+						4, 5));
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
