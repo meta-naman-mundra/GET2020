@@ -20,7 +20,6 @@ class conversion {
 				d--;
 				number = Math.pow(16, d) * number1 + number;
 			}
-
 		}
 		return number;
 	}
