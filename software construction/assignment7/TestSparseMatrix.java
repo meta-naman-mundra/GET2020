@@ -117,7 +117,7 @@ public class TestSparseMatrix {
 			 assertFalse(mo.isSymmetric());
 	   }
 
-	// negative test case for symmetric matric where matrix is of n x n size
+	// negative test case for symmetric matrix where matrix is of n x n size
 	@Test
 	   public void testSymmetricMatrix_Negative() throws Exception{	
 			SparseMatrix mo = new SparseMatrix(new int[][]{{2, 3, 1} ,{5, 4, 6}, {7, 8, 9}});

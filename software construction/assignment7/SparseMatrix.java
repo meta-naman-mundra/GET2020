@@ -19,7 +19,8 @@ public class SparseMatrix {
 		int count = 0;
 		rows = matrix.length;
 		cols = matrix[0].length;
-
+		System.out.println(rows);
+		System.out.println(cols);
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < cols; j++) {
 				if (matrix[i][j] != 0) {
@@ -169,5 +170,14 @@ public class SparseMatrix {
 			}
 		}
 		return new SparseMatrix(matrix);
+	}
+	public static void main(String args[])
+	{
+		try {
+			SparseMatrix mo=new SparseMatrix(new int[][]{{2, 3}, {5, 6}, {6, 9}});
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
