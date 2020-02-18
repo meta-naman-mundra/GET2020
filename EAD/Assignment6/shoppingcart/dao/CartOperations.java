@@ -5,7 +5,7 @@ import com.metacube.shoppingcart.model.Product;
 import com.metacube.shoppingcart.model.User;
 
 /**
- * @author krishan
+
  * CartOperations interface has the methods of Cart Operations
  *
  */
@@ -17,6 +17,7 @@ public interface CartOperations
 	 * @param quantity
 	 * Adds Product to Cart
 	 */
+
 	public void addProduct(String productName, int quantity);
 
 	/**

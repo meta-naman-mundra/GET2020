@@ -2,7 +2,6 @@
 package com.metacube.shoppingcart.model;
 
 /**
- * @author krishan
  * User class Represents User attributes and is a bean
  *
  */

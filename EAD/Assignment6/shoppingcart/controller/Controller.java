@@ -7,7 +7,7 @@ import com.metacube.shoppingcart.model.Product;
 import com.metacube.shoppingcart.model.User;
 
 /**
- * @author krishan
+
  * Controller to perform Cart operations
  */
 public class Controller
@@ -43,7 +43,7 @@ public class Controller
 		}
 		catch (Exception e)
 		{
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 
 	}
@@ -68,7 +68,9 @@ public class Controller
 		}
 		catch (Exception e)
 		{
-			e.printStackTrace();
+
+			System.out.println(e.getMessage());
+
 		}
 
 	}
@@ -124,7 +126,8 @@ public class Controller
 		}
 		catch (Exception e)
 		{
-			e.printStackTrace();
+			System.out.println(e.getMessage());
+
 		}
 
 	}

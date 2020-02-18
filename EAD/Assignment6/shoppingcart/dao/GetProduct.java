@@ -5,7 +5,6 @@ import java.util.List;
 import com.metacube.shoppingcart.model.Product;
 
 /**
- * @author krishan
  * class GetProduct has list of products and getter method for getting particular product
  *
  */
@@ -52,6 +51,7 @@ public class GetProduct
 				case "Shirt":
 					return stock.get(4);
 				default:
+					System.out.println("Enter name of product correctly!");
 					return null;
 				}
 			}

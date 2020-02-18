@@ -8,7 +8,6 @@ import com.metacube.shoppingcart.model.Product;
 import com.metacube.shoppingcart.model.User;
 
 /**
- * @author krishan
  * Class to Perform Cart Operations
  */
 public class PerformCartOperations

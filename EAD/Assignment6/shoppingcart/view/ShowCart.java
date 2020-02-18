@@ -7,7 +7,6 @@ import com.metacube.shoppingcart.model.Product;
 import com.metacube.shoppingcart.model.User;
 
 /**
- * @author krishan
  * ShowCart is the main class
  *
  */

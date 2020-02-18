@@ -1,7 +1,6 @@
 package com.metacube.shoppingcart.model;
 
 /**
- * @author krishan
  * Product class Represents Product attributes and is a bean
  *
  */
