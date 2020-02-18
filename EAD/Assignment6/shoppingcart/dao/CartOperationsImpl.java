@@ -1,7 +1,6 @@
 package com.metacube.shoppingcart.dao;
 
 import java.util.Map;
-
 import com.metacube.shoppingcart.model.Cart;
 import com.metacube.shoppingcart.model.Product;
 import com.metacube.shoppingcart.model.User;

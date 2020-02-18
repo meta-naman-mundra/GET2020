@@ -7,6 +7,7 @@ import com.metacube.shoppingcart.model.Product;
 import com.metacube.shoppingcart.model.User;
 
 /**
+
  * Controller to perform Cart operations
  */
 public class Controller
@@ -67,7 +68,9 @@ public class Controller
 		}
 		catch (Exception e)
 		{
+
 			System.out.println(e.getMessage());
+
 		}
 
 	}
@@ -124,6 +127,7 @@ public class Controller
 		catch (Exception e)
 		{
 			System.out.println(e.getMessage());
+
 		}
 
 	}
