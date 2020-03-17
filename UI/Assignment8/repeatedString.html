@@ -48,20 +48,24 @@
             for (var index = 0; index < inputString.length; index++) {
                 stack1.push(inputString[index]);
             }
-            var previousValue = "";
+            //stack 2 Top element
+            var stack2Top = "";
             while (!stack1.empty()) {
                 if (!stack2.empty() && stack1.top.data == stack2.top.data) {
-                    previousValue = stack1.pop();
+                    //Pop both element from the stack.
+                    stack2Top = stack1.pop();
                     stack2.pop();
                 } else {
-                    var currentValue = stack1.pop();
-                    if (previousValue != currentValue) {
-                        previousValue = currentValue;
-                        stack2.push(currentValue);
+                    //stack 1 Top element 
+                    var stack1Top = stack1.pop();
+                    if (stack2Top != stack1Top) {
+                        stack2Top = stack1Top;
+                        stack2.push(stack1Top);
                     }
                 }
             }
             var outputString = "";
+            //print stack2
             while (!stack2.empty()) {
                 outputString += stack2.pop();
             }
