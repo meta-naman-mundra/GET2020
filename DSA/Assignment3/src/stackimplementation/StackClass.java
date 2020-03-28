@@ -1,3 +1,4 @@
+
 package stackimplementation;
 
 public class StackClass implements StackInterface{
